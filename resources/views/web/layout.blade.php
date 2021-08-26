@@ -43,7 +43,7 @@
                         <!-- Logo -->
                         <div class="col-lg-2 col-sm-3 col-3 order-1">
                             <div class="logo_container">
-                                <div class="logo"><a href="#">Techstore</a></div>
+                                <div class="logo"><a href="{{url('/')}}">Techstore</a></div>
                             </div>
                         </div>
 
@@ -102,52 +102,7 @@
 
             <!-- Main Navigation -->
 
-            <nav class="main_nav">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-
-                            <div class="main_nav_content d-flex flex-row">
-
-                                <!-- Categories Menu -->
-
-                                <div class="cat_menu_container">
-                                    <div
-                                        class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
-                                        <div class="cat_burger"><span></span><span></span><span></span></div>
-                                        <div class="cat_menu_text">categories</div>
-                                    </div>
-
-                                    <ul class="cat_menu">
-                                        <li><a href="#">Computers & Laptops <i
-                                                    class="fas fa-chevron-right ml-auto"></i></a></li>
-                                        <li><a href="#">Cameras & Photos<i class="fas fa-chevron-right"></i></a></li>
-                                        <li><a href="#">Smartphones & Tablets<i class="fas fa-chevron-right"></i></a>
-                                        </li>
-                                        <li><a href="#">TV & Audio<i class="fas fa-chevron-right"></i></a></li>
-                                        <li><a href="#">Gadgets<i class="fas fa-chevron-right"></i></a></li>
-                                        <li><a href="#">Car Electronics<i class="fas fa-chevron-right"></i></a></li>
-                                        <li><a href="#">Video Games & Consoles<i class="fas fa-chevron-right"></i></a>
-                                        </li>
-                                        <li><a href="#">Accessories<i class="fas fa-chevron-right"></i></a></li>
-                                    </ul>
-                                </div>
-
-                                <!-- Main Nav Menu -->
-
-                                <div class="main_nav_menu ml-auto">
-                                    <ul class="standard_dropdown main_nav_dropdown">
-                                        <li><a href="#">Home<i class="fas fa-chevron-down"></i></a></li>
-                                        <li><a href="#">All products<i class="fas fa-chevron-down"></i></a></li>
-                                        <li><a href="#">Cart<i class="fas fa-chevron-down"></i></a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+                <x-navbar></x-navbar>
 
         </header>
 

@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\web\CatController;
 use App\Http\Controllers\web\HomeController;
+use App\Http\Controllers\web\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[HomeController::class, 'index']);
+
+Route::get('/cats/show/{id}',[CatController::class, 'show']);
+
+Route::get('/products',[ProductController::class, 'index']);
+Route::get('/products/show/{product}',[ProductController::class, 'show']);
